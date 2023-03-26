@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Business Casual - Start Bootstrap Theme</title>
+        <title>Bayou City Federated Music Club</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -16,27 +16,81 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
-        <header>
-            <h1 class="site-heading text-center text-faded d-none d-lg-block">
-                <span class="site-heading-upper text-primary mb-3">Bayou City Federated Music Club</span>
-                <span class="site-heading-lower">Festival Registration</span>
-            </h1>
-        </header>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">BCFMC</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">About</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="calendar.html">Calendar</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="forms.html">Forms</a></li>
-                    </ul>
+        <body>
+            <header class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="my-auto col-5 col-sm-4 col-md-3 align-self-center d-none d-md-block">
+                                <a href="index.html"><img src="assets/img/logo.png" class="img-fluid" /></a>
+                            </div>
+                            <div class="col">
+                                <h1 class="site-heading text-faded">
+                                    <span class="site-heading-upper text-primary mb-1">Bayou City Federated Music Club</span>
+                                    <span class="site-heading-lower">Festival Registration</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+            </header>
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-md navbar-dark sticky-top" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" height="40" width="40" /></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html"><i class="fa fa-home fa-lg"></i>&nbsp; Home</a></li>
+                            <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html"><i class="fa fa-info fa-lg"></i>&nbsp; About</a></li>
+                            <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="calendar.html"><i class="fa fa-calendar fa-lg"></i>&nbsp; Calendar</a></li>
+                            <li class="nav-item px-lg-4 active"><a class="nav-link text-uppercase" href="forms.html"><i class="fa fa-address-card fa-lg"></i>&nbsp; Forms</a></li>
+                        </ul>
+                        <span class="navbar-text text-uppercase ml-auto">
+                            <a role="button" data-toggle="modal" data-target="#loginModal" id="login">
+                                <i class="fa fa-sign-in fa-lg"></i>&nbsp; Login
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+            <!-- Login-->
+            <div id="loginModal" class="modal fade" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Login</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-12">
+                                            <label class="sr-only" for="loginEmail">Email address</label>
+                                            <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group col-12">
+                                            <label class="sr-only" for="loginPassword">Password</label>
+                                            <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-check mt-3">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label"> Remember me</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row mt-3">
+                                        <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                        <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
         <section class="page-section cta">
             <div class="container">
                 <div class="row">

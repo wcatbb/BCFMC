@@ -3947,6 +3947,11 @@ textarea.form-control-lg {
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
+@media (max-width: 768px) {
+  #login{
+    margin-top: 6px;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
@@ -3960,7 +3965,12 @@ textarea.form-control-lg {
   pointer-events: none;
   cursor: default;
 }
-
+#login {
+  display: block;
+  font-weight: 800;
+  color: whitesmoke;
+  padding-top: 0px;
+}
 .nav-tabs {
   border-bottom: 1px solid #dee2e6;
 }
