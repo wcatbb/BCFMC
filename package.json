@@ -5,12 +5,23 @@
   "main": "index.html",
   "scripts": {
     "start": "npm run lite",
-    "lite" : "lite-server",
+    "lite": "lite-server",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* public/fonts",
+    "imagemin": "imagemin assets/img* -o public/assets/img",
+    "usemin": "usemin about.html -d public --htmlmin -o public/about.html && usemin calendar.html -d public --htmlmin -o public/calendar.html && usemin forms.html -d public --htmlmin -o public/forms.html && usemin index.html -d public --htmlmin -o public/index.html",
+    "clean": "rimraf public",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Doug Beatty",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.6.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   }
 }
