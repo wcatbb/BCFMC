@@ -33,6 +33,78 @@
                     </div>
                 </div>
         </header>
+        <!-- Registration-->
+        <div id="registerModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Account Registration</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="row form-group">
+                                    <div class="form-group row align-items-center">
+                                        <label for="firstName" class="col-md-3 col-form-label">First Name:</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row align-items-center">
+                                        <label for="lastName" class="col-md-3 col-form-label">Last Name:</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row align-items-center">
+                                        <label for="phone" class="col-md-3 col-form-label">Phone:</label>
+                                        <div class="col-md-9">
+                                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" onInput="this.value = phoneFormat(this.value)" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row align-items-center">
+                                        <label for="email" class="col-md-3 col-form-label">Email:</label>
+                                        <div class="col-md-9">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row align-items-center">
+                                        <label for="password" class="col-md-3 col-form-label">Password:</label>
+                                        <div class="col-md-9">
+                                            <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row align-items-center mb-3">
+                                        <label for="confirmPassword" class="col-md-3 col-form-label">Confirm:</label>
+                                        <div class="col-md-9">
+                                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group mb-3">
+                                    <label for="accountType" class="col-md-3 col-form-label">I am a:</label>
+                                    <div class="col btn-group btn-group-toggle col-md-4" data-toggle="buttons">
+                                        <label class="btn btn-success active">
+                                            <input type="radio" name="userType" id="student" value="student" autocomplete="off" checked> Student
+                                        </label>
+                                        <label class="btn btn-danger">
+                                            <input type="radio" name="userType" id="teacher" value="teacher" autocomplete="off"> Teacher
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-md navbar-dark sticky-top" id="mainNav">
             <div class="container">
@@ -68,8 +140,8 @@
                             <form>
                                 <div class="form-row">
                                     <div class="form-group col-12">
-                                        <label class="sr-only" for="loginEmail">Email address</label>
-                                        <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                        <label class="sr-only" for="loginEmail">Email</label>
+                                        <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Email">
                                     </div>
                                     <div class="form-group col-12">
                                         <label class="sr-only" for="loginPassword">Password</label>
@@ -102,7 +174,7 @@
                             <span class="section-heading-lower">Music</span>
                         </h2>
                         <p class="mb-3">The Bayou City Federated Music Club promotes music learning. We are a member of the <a href="https://www.nfmc-music.org/" target="_blank" rel="noopener noreferrer">National Federation of Music Clubs</a> and the <a href="https://www.texasfederation.org/" target="_blank" rel="noopener noreferrer">Federation of Music Clubs</a>. 500+ students participate in our festival each February and those that receive the highest grade are eligible to participate in the annual Texas State Music Festival.</p>
-                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="#!">Register Today!</a></div>
+                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" id="registerButton">Register Today!</a></div>
                     </div>
                 </div>
             </div>
