@@ -46,44 +46,110 @@
                             <form>
                                 <div class="row form-group">
                                     <div class="form-group row align-items-center">
-                                        <label for="firstName" class="col-md-3 col-form-label">First Name:</label>
-                                        <div class="col-md-9">
+                                        <label for="firstName" class="col-lg-2 col-form-label">First Name:</label>
+                                        <div class="col-lg-4">
                                             <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
                                         </div>
-                                    </div>
-                                    <div class="form-group row align-items-center">
-                                        <label for="lastName" class="col-md-3 col-form-label">Last Name:</label>
-                                        <div class="col-md-9">
+                                        <label for="lastName" class="col-lg-2 col-form-label">Last Name:</label>
+                                        <div class="col-lg-4">
                                             <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
                                         </div>
                                     </div>
                                     <div class="form-group row align-items-center">
-                                        <label for="phone" class="col-md-3 col-form-label">Phone:</label>
-                                        <div class="col-md-9">
-                                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" onInput="this.value = phoneFormat(this.value)" />
+                                        <label for="address" class="col-md-2 col-form-label">Address:</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="form-control" id="address" name="address" placeholder="Address" />
                                         </div>
                                     </div>
                                     <div class="form-group row align-items-center">
-                                        <label for="email" class="col-md-3 col-form-label">Email:</label>
-                                        <div class="col-md-9">
+                                        <label for="city" class="col-md-2 col-form-label">City:</label>
+                                        <div class="col-md-3">
+                                            <input type="text" class="form-control" id="city" name="city" placeholder="City" />
+                                        </div>
+                                        <label for="state" class="col-md-1 col-form-label">State:</label>
+                                        <div class="col">
+                                            <select class="form-control" name="state" id="state">
+                                                <option value="AL">AL</option>
+                                                <option value="AK">AK</option>
+                                                <option value="AR">AR</option>
+                                                <option value="AZ">AZ</option>
+                                                <option value="CA">CA</option>
+                                                <option value="CO">CO</option>
+                                                <option value="CT">CT</option>
+                                                <option value="DC">DC</option>
+                                                <option value="DE">DE</option>
+                                                <option value="FL">FL</option>
+                                                <option value="GA">GA</option>
+                                                <option value="HI">HI</option>
+                                                <option value="IA">IA</option>
+                                                <option value="ID">ID</option>
+                                                <option value="IL">IL</option>
+                                                <option value="IN">IN</option>
+                                                <option value="KS">KS</option>
+                                                <option value="KY">KY</option>
+                                                <option value="LA">LA</option>
+                                                <option value="MA">MA</option>
+                                                <option value="MD">MD</option>
+                                                <option value="ME">ME</option>
+                                                <option value="MI">MI</option>
+                                                <option value="MN">MN</option>
+                                                <option value="MO">MO</option>
+                                                <option value="MS">MS</option>
+                                                <option value="MT">MT</option>
+                                                <option value="NC">NC</option>
+                                                <option value="NE">NE</option>
+                                                <option value="NH">NH</option>
+                                                <option value="NJ">NJ</option>
+                                                <option value="NM">NM</option>
+                                                <option value="NV">NV</option>
+                                                <option value="NY">NY</option>
+                                                <option value="ND">ND</option>
+                                                <option value="OH">OH</option>
+                                                <option value="OK">OK</option>
+                                                <option value="OR">OR</option>
+                                                <option value="PA">PA</option>
+                                                <option value="RI">RI</option>
+                                                <option value="SC">SC</option>
+                                                <option value="SD">SD</option>
+                                                <option value="TN">TN</option>
+                                                <option value="TX" selected="selected">TX</option>
+                                                <option value="UT">UT</option>
+                                                <option value="VT">VT</option>
+                                                <option value="VA">VA</option>
+                                                <option value="WA">WA</option>
+                                                <option value="WI">WI</option>
+                                                <option value="WV">WV</option>
+                                                <option value="WY">WY</option>
+                                            </select>
+                                        </div>
+                                        <label for="zipCode" class="col-md-1 col-form-label">Zip:</label>
+                                        <div class="col-md-3">
+                                            <input type="text" class="form-control" id="zipCode" name="zipCode" placeholder="Zip" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row align-items-center">
+                                        <label for="phone" class="col-lg-2 col-form-label">Phone:</label>
+                                        <div class="col-lg-3">
+                                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" onInput="this.value = phoneFormat(this.value)" />
+                                        </div>
+                                        <label for="email" class="col-lg-1 col-form-label">Email:</label>
+                                        <div class="col-lg-6">
                                             <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
                                         </div>
                                     </div>
-                                    <div class="form-group row align-items-center">
-                                        <label for="password" class="col-md-3 col-form-label">Password:</label>
-                                        <div class="col-md-9">
+                                    <div class="form-group row align-items-center mb-3">
+                                        <label for="password" class="col-lg-2 col-form-label">Password:</label>
+                                        <div class="col-lg-3">
                                             <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
                                         </div>
-                                    </div>
-                                    <div class="form-group row align-items-center mb-3">
-                                        <label for="confirmPassword" class="col-md-3 col-form-label">Confirm:</label>
-                                        <div class="col-md-9">
+                                        <label for="confirmPassword" class="col-lg-3 col-form-label">Confirm Password:</label>
+                                        <div class="col-lg-4">
                                             <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row form-group mb-3">
-                                    <label for="accountType" class="col-md-3 col-form-label">I am a:</label>
+                                    <label for="accountType" class="col-md-2 col-form-label">I am a:</label>
                                     <div class="col btn-group btn-group-toggle col-md-4" data-toggle="buttons">
                                         <label class="btn btn-success active">
                                             <input type="radio" name="userType" id="student" value="student" autocomplete="off" checked> Student
