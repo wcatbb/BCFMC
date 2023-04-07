@@ -11368,7 +11368,9 @@ p {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-
+#calendar {
+  background-color: whitesmoke;
+}
 #mainNav {
   background-color: rgba(47, 23, 15, 0.9);
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
