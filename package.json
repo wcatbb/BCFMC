@@ -8,7 +8,7 @@
     "lite": "lite-server",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* public/fonts",
     "imagemin": "imagemin assets/img* -o public/assets/img",
-    "usemin": "usemin about.html -d public --htmlmin -o public/about.html && usemin calendar.html -d public --htmlmin -o public/calendar.html && usemin forms.html -d public --htmlmin -o public/forms.html && usemin index.html -d public --htmlmin -o public/index.html",
+    "usemin": "usemin about.html -d public --htmlmin -o public/about.html && usemin calendar.html -d public --htmlmin -o public/calendar.html && usemin entry.html -d public --htmlmin -o public/entry.html && usemin index.html -d public --htmlmin -o public/index.html",
     "clean": "rimraf public",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,6 +25,12 @@
     "usemin-cli": "^0.6.0"
   },
   "dependencies": {
-    "fullcalendar": "^6.1.5"
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^4.5.2",
+    "font-awesome": "^4.7.0",
+    "fullcalendar": "^6.1.5",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "usemin": "^0.6.0"
   }
 }

@@ -1,8 +1,3 @@
-// Highlights current date on contact page
-window.addEventListener('DOMContentLoaded', function (event) {
-        const listHoursArray = document.body.querySelectorAll('.list-hours li');
-        listHoursArray[new Date().getDay()].classList.add(('today'));
-    })
 // Fullcalendar.io
 document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
@@ -11,11 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     calendar.render();
     });
-    $("#registerButton").click(function(){
-        $('#registerModal').modal('show');
-    });
-    $("#loginButton").click(function(){
-        $('#loginModal').modal('show');
+// Highlights current date on contact page
+window.addEventListener('DOMContentLoaded', function () {
+    const listHoursArray = document.body.querySelectorAll('.list-hours li');
+    listHoursArray[new Date().getDay()].classList.add(('today'));
     });
     function phoneFormat(input) {//returns (###) ###-####
         input = input.replace(/\D/g,'');
